@@ -1,0 +1,109 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    padding-top: 60px; /* Ensure content doesn't overlap the navbar */
+}
+
+/* Container styling */
+.container {
+    width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header styling */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.feedback-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #218838;
+}
+
+/* Feedback Entries */
+.feedback {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.feedback-user {
+    font-weight: bold;
+}
+
+.feedback-text {
+    margin: 10px 0;
+}
+
+.feedback-date {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Actions for each feedback */
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.actions .mark-read {
+    color: #ffc107;
+}
+
+.actions .mark-read:hover {
+    color: #e0a800;
+}
+
+/* Status Message */
+.status-message {
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

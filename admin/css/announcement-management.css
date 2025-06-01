@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 60px; /* Ensure content starts below the fixed navbar */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 36px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #34495E;
+    margin-bottom: 15px;
+    text-align: center; /* Centering the Recent Announcements heading */
+}
+
+/* Status message */
+.status-message {
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.announcement-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Announcements Section */
+.announcements {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.announcement {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.announcement:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-text {
+    font-size: 18px;
+    color: #2C3E50;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.announcement-date {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .announcement-form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .announcements {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .announcement {
+        padding: 15px;
+    }
+}

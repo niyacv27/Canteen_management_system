@@ -1,0 +1,172 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    padding-top: 60px;  /* Ensure content doesn't overlap the navbar */
+}
+
+/* Container for the content */
+.container {
+    width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px;  /* Limit the width */
+}
+
+/* Section Styling (Form and Table Separations) */
+.form-section, .items-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Add Item Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /* Reduced space between elements */
+    width: 100%;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 8px;  /* Reduced padding for compact form */
+    font-size: 14px;  /* Smaller font size for a more compact look */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 8px;  /* Reduced space between form elements */
+}
+
+/* File input for compactness */
+form input[type="file"] {
+    padding: 6px;
+    font-size: 14px;
+}
+
+/* Select styling */
+form select {
+    padding: 8px;
+}
+
+/* Submit button styling */
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;  /* Smaller font size for a compact look */
+    padding: 10px 12px;  /* Compact padding (6px vertical, 12px horizontal) */
+    border-radius: 4px;  /* Slightly rounded corners */
+    text-align: center;  /* Center text inside the button */
+    width: auto;  /* Ensure button only takes necessary width */
+    margin-top: 10px;  /* Add slight spacing from other form elements */
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+/* Manage Existing Items Table */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px 12px;  /* Reduced padding for a more compact table */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+table td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Action Links Styling */
+.actions a {
+    color: #d9534f;
+    text-decoration: none;
+    font-size: 14px;  /* Reduced font size for links */
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Form Section */
+.form-section {
+    width: 100%;
+    max-width: 600px;  /* Limit the width of the form */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add some spacing between sections */
+.form-section + .items-section {
+    margin-top: 40px;  /* Add extra space between form and the table */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;  /* Make container larger on smaller screens */
+        padding: 20px;
+    }
+
+    .form-section, .items-section {
+        padding: 15px;
+    }
+
+    table td img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Form styling for mobile */
+    form input,
+    form select,
+    form button {
+        width: 100%;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items on mobile */
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+}

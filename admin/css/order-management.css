@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    color: #333;
+    margin-top: 80px; /* Add top margin to make space for the fixed navbar */
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #2C3E50;
+    color: white;
+}
+td a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
+.action-btn {
+    padding: 8px 16px;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.action-btn:hover {
+    background-color: #1abc9c;
+}
+
+
+
+/* Style for Approve Button */
+.approve-btn {
+    background-color: #27ae60; /* Green for approve */
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.approve-btn:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
+
+/* Style for Reject Button */
+.reject-btn {
+    background-color: #e74c3c; /* Red for reject */
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
