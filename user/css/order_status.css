@@ -1,0 +1,91 @@
+/* Table Styling */
+.table {
+    width: 100%;
+    table-layout: auto; /* Let the table columns adjust based on content */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table itself */
+}
+
+/* General Table Cell Padding, Centering, and Alignment */
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;  /* Horizontal center alignment */
+    vertical-align: middle;  /* Vertical center alignment */
+    border: 1px solid #ddd;
+}
+
+/* Table Header Background */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Image Styling */
+.table img {
+    width: 100px;  /* Fixed width */
+    height: 60px;  /* Fixed height to maintain aspect ratio */
+    object-fit: cover;  /* Ensure the image fits well without distortion */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the "Actions" column (Buttons) */
+.table td:last-child {
+    width: 180px;  /* Ensure there is enough space for buttons */
+}
+
+/* Ensure the "Order Type", "Order Date", and "Delivery Date" columns have consistent width */
+.table td:nth-child(2), .table th:nth-child(2), 
+.table td:nth-child(3), .table th:nth-child(3),
+.table td:nth-child(4), .table th:nth-child(4),
+.table td:nth-child(5), .table th:nth-child(5) {
+    width: 150px; /* Set width for order-related columns */
+}
+
+/* Status column width */
+.table td:nth-child(6), .table th:nth-child(6) {
+    width: 150px; /* Ensure the "Status" column is wide enough */
+}
+
+/* Action Buttons Styling */
+.table .btn {
+    margin-top: 5px;
+    padding: 8px 12px;  /* Add padding to buttons */
+    font-size: 14px;
+    width: 100%;  /* Make buttons expand to fill available space */
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+/* Cancel Button */
+.table .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Pay Now Button */
+.table .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .table {
+        font-size: 12px;
+    }
+    .table td, .table th {
+        padding: 8px;
+    }
+    .table img {
+        max-width: 80px;  /* Reduce image size on smaller screens */
+    }
+    .table .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    /* Stack action buttons for small screens */
+    .table .btn {
+        width: auto;  /* Let buttons shrink on smaller screens */
+    }
+}

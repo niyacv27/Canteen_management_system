@@ -1,0 +1,72 @@
+/* Table styling */
+.table {
+    width: 100%;
+    table-layout: auto; /* Let the table columns adjust based on content */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table itself */
+}
+
+/* General table cell padding, centering and alignment */
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;  /* Horizontal center alignment */
+    vertical-align: middle;  /* Vertical center alignment */
+    border: 1px solid #ddd;
+}
+
+/* Table header background */
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Quantity column specific width */
+.table td:nth-child(3), .table th:nth-child(3) {
+    width: 120px; /* Set a reasonable width for quantity input */
+}
+
+/* Order Type column specific width */
+.table td:nth-child(4), .table th:nth-child(4) {
+    width: 150px; /* Ensure the Order Type column is wide enough */
+}
+
+/* Ensure the "Status" column is not too narrow */
+.table td:nth-child(6), .table th:nth-child(6) {
+    width: 150px;
+}
+
+/* Image styling to prevent overflow and maintain aspect ratio */
+.table img {
+    width: 100px;  /* Fixed width */
+    height: 60px;  /* Maintain the aspect ratio */
+    object-fit: cover;  /* Ensure the image fits well without distortion */
+    display: block; /* Make the image a block-level element */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+/* Flexibility for quantity input */
+.table input[type="number"] {
+    width: 100%; /* Make input field flexible */
+    box-sizing: border-box; /* Prevent overflow */
+    display: block; /* Ensure input field behaves like a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the input field */
+}
+
+/* Action buttons styling */
+.btn {
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .table {
+        font-size: 12px;
+    }
+    .table td, .table th {
+        padding: 10px;
+    }
+    .table img {
+        max-width: 80px;  /* Reduce image size on smaller screens */
+    }
+}

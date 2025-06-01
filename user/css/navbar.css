@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 60px; /* Offset for fixed navbar */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2C3E50; /* Darker shade for a professional look */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 30px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;  /* Spread out logo and links */
+    align-items: center;  /* Vertically center the items */
+}
+
+/* Logo Styling */
+.navbar .logo a {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Center-align the items horizontally */
+    align-items: center;  /* Vertically align nav items */
+    flex-grow: 1;  /* This makes the links take the remaining space */
+    margin-left: 20px; /* Some space between logo and nav links */
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;  /* Set margin between nav items to 10px for equal spacing */
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #1abc9c; /* Greenish hover effect */
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+.navbar .nav-links li.logout a {
+    background-color: #e74c3c; /* Red color for logout button */
+    color: white;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links li.logout a:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;  /* Full width for mobile */
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-bottom: 15px; /* Space between items on mobile */
+    }
+}
