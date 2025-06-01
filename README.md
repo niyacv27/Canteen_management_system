@@ -1,1 +1,2 @@
-# Canteen_management_system
+# EasyEats
+project for food ordering
